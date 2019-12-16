@@ -3,7 +3,7 @@ SC.initialize({
 });
 
 $(document).ready(function() {
-  SC.stream('/tracks/287650760', function(sound) {
+  SC.stream('/tracks/287650760', function(song) {
     $('#p1').click(function(e) {
       e.preventDefault();
       song.start();
