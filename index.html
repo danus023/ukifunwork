@@ -12,7 +12,6 @@
 
     <script src="http://connect.soundcloud.com/sdk.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="main.js"></script>
 
     <style media="screen">
       .ho:hover{
@@ -87,6 +86,28 @@
 
   </head>
   <body>
+    <script>
+      SC.initialize({
+  client_id: '340f063c670272fac27cfa67bffcafc4'
+});
+
+$(document).ready(function() {
+  SC.stream('/tracks/257524228', function(sound) {
+    $('#p1').click(function(e) {
+      e.preventDefault();
+      song.start();
+    });
+    $('#pu1').click(function(e) {
+        e.preventDefault();
+        song.pause();
+    });
+    $('#s1').click(function(e) {
+      e.preventDefault();
+      song.stop();
+    });
+  });
+});
+    </script>
     <!-- Nav Bar Start -->
 
     <nav class="navbar navbar-default a">
