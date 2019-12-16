@@ -3,16 +3,16 @@ SC.initialize({
 });
 
 $(document).ready(function() {
-  SC.stream('/tracks/173826641', function(song) {
-    $('#p1').click(function() {
+  SC.stream('/tracks/257524228', function(sound) {
+    $('#p1').click(function(e) {
       e.preventDefault();
       song.start();
     });
-    $('#pu1').click(function() {
+    $('#pu1').click(function(e) {
         e.preventDefault();
         song.pause();
     });
-    $('#s1').click(function() {
+    $('#s1').click(function(e) {
       e.preventDefault();
       song.stop();
     });
