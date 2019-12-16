@@ -4,15 +4,15 @@ SC.initialize({
 
 $(document).ready(function() {
   SC.stream('/tracks/173826641', function(song) {
-    $('#p1').click(function(e) {
+    $('#p1').click(function() {
       e.preventDefault();
       song.start();
     });
-    $('#pu1').click(function(e) {
+    $('#pu1').click(function() {
         e.preventDefault();
         song.pause();
     });
-    $('#s1').click(function(e) {
+    $('#s1').click(function() {
       e.preventDefault();
       song.stop();
     });
